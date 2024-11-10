@@ -1,0 +1,36 @@
+{
+    "defaultEnvironment": {
+        "ipConfiguration": "WORKER_IP_PRIVATE",
+        "stagingLocation": "gs://dataflow_flex_template_demo_bucket_123/staging",
+        "tempLocation": "gs://dataflow_flex_template_demo_bucket_123/temp",
+        "workerRegion": "us-central1"
+    },
+    "image": "us-central1-docker.pkg.dev/dev-project-433015/harmony/dataflow-python:latest",
+    "metadata": {
+        "description": "A Dataflow flex template for processing Parquet files and converting them to JSON.",
+        "name": "Parquet to JSON Dataflow Template",
+        "parameters": [
+            {
+                "helpText": "The path to the input Parquet file in Google Cloud Storage.",
+                "isOptional": false,
+                "label": "Input Parquet Path",
+                "name": "input_parquet_path",
+                "regexes": [
+                    "^gs:\\/\\/[^\\n\\r]+$"
+                ]
+            },
+            {
+                "helpText": "The path to the output JSON file in Google Cloud Storage.",
+                "isOptional": false,
+                "label": "Output JSON Path",
+                "name": "output_json_path",
+                "regexes": [
+                    "^gs:\\/\\/[^\\n\\r]+$"
+                ]
+            }
+        ]
+    },
+    "sdkInfo": {
+        "language": "PYTHON"
+    }
+}

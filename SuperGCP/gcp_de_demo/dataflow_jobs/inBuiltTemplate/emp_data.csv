@@ -1,0 +1,6 @@
+id,name,age,joining_date,joining_time,salary,is_active
+1,John Doe,28,2024-05-21,09:00:00,55000.50,TRUE
+2,Jane Smith,34,2024-06-01,10:30:00,63000.75,FALSE
+3,Bob Johnson,45,2024-07-15,11:45:00,72000.00,TRUE
+4,Alice Brown,29,2024-08-22,08:15:00,50000.00,FALSE
+5,Charlie Davis,31,2024-09-03,13:30:00,48000.25,TRUE
